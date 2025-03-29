@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Projects</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Engineer’s Hub Logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    </nav>
+
+    <!-- Search Bar -->
+    <section class="search-section">
+        <h2>Search Engineering Projects</h2>
+        <input type="text" id="search-bar" placeholder="Search by project name..." oninput="searchProjects()">
+        <div id="suggestions" class="suggestions"></div>
+    </section>
+
+    <!-- Project Cards Section -->
+    <section class="projects-section" id="project-cards">
+        <div class="project-card">
+            <h3>AI in Healthcare</h3>
+            <p>Develop an AI model for diagnosing diseases in healthcare.</p>
+            <a href="#" class="btn" onclick="viewProjectDetails('AI in Healthcare')">View Details</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Smart Traffic System</h3>
+            <p>Implement a smart traffic management system using IoT and AI.</p>
+            <a href="#" class="btn" onclick="viewProjectDetails('Smart Traffic System')">View Details</a>
+        </div>
+    </section>
+
+    <!-- Project Details Section -->
+    <section class="project-details" id="project-details" style="display: none;">
+        <h2>Project Details</h2>
+        <div id="project-info"></div>
+        <button class="close-btn" onclick="closeProjectDetails()">Close</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Engineering Hub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="project.js"></script>
+</body>
+</html>

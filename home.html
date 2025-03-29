@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineer’s Hub</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="EngineersHub">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    </nav>
+
+    <!-- Search Bar Section -->
+    <section class="search-section">
+        <input type="text" id="search-bar" placeholder="Search for Projects, Courses..." class="search-bar" onkeyup="showSuggestions()">
+        <div id="suggestions" class="suggestions"></div>
+    </section>
+
+    <!-- Image Gallery Slider Section -->
+    <section class="gallery-slider">
+        <h2>ENCOURAGES CREATIVITY AND BUILDING</h2>
+        <div class="slider-container">
+            <div class="slide">
+                <img src="./images/img1.avif" alt="Gallery Image 1">
+            </div>
+            <div class="slide">
+                <img src="./images/img2.jpg" alt="Gallery Image 2">
+            </div>
+            <div class="slide">
+                <img src="./images/img3.jpg" alt="Gallery Image 3">
+            </div>
+            <div class="slide">
+                <img src="./images/img4.jpg" alt="Gallery Image 4">
+            </div>
+            <div class="slide">
+                <img src="./images/img5.jpg" alt="Gallery Image 5">
+            </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </section>
+
+    <!-- Feature Cards Section -->
+    <section class="features">
+        <div class="feature-card" onclick="location.href='project.html'">
+            <div class="card-icon">
+                <img src="./images/card1.jpg" alt="Projects Icon">
+            </div>
+            <h3>Innovative Projects</h3>
+            <p>Explore engineering projects to hone your skills and creativity.</p>
+            <a href="project.html" class="btn">See Projects</a>
+        </div>
+
+        <div class="feature-card" onclick="location.href='course.html'">
+            <div class="card-icon">
+                <img src="./images/card2.jpg" alt="Courses Icon">
+            </div>
+            <h3>Educational Courses</h3>
+            <p>Take courses to advance your skills and knowledge in various engineering fields.</p>
+            <a href="course.html" class="btn">Browse Courses</a>
+        </div>
+
+        <div class="feature-card" onclick="location.href='contactus.html'">
+            <div class="card-icon">
+                <img src="./images/card3.jpg" alt="Contact Us Icon">
+            </div>
+            <h3>Get in Touch</h3>
+            <p>Contact us for any assistance, guidance, or to get your questions answered.</p>
+            <a href="contactus.html" class="btn">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Engineer’s Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>
