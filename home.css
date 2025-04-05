@@ -24,15 +24,33 @@ body {
 
 .navbar .logo img {
     width: 50px;
+    
+}
+.wname{
+    font-size: 30px;
+    color:white;
+    margin-left: 10px;
+   
 }
 
 .navbar ul {
-    list-style: none;
     display: flex;
+    list-style: none;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
 }
 
 .navbar ul li {
-    margin-left: 20px;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap:5px;
+    margin-left:auto;
+    padding: 0%;
 }
 
 .navbar ul li a {
