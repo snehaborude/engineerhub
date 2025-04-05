@@ -23,7 +23,7 @@ body {
 }
 
 .navbar .logo img {
-    width: 150px;
+    width: 50px;
 }
 
 .navbar ul {
@@ -55,6 +55,39 @@ body {
     border: none;
     cursor: pointer;
 }
+/* Theme Toggle Icon Styling */
+.theme-toggle {
+    cursor: pointer;
+    margin-left: auto;
+    padding: 10px;
+}
+
+.theme-toggle img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Dark Mode Styling */
+.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.dark-mode .navbar,
+.dark-mode footer {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .feature-card {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+}
+
+.dark-mode a,
+.dark-mode .btn {
+    color: #ffd700;
+}
+
 
 /* Search Bar Section */
 .search-section {
@@ -91,6 +124,7 @@ body {
 .slider-container {
     position: relative;
     width: 80%;
+    height: 100%;
     margin: 0 auto;
     overflow: hidden;
     border-radius: 15px;
@@ -98,12 +132,14 @@ body {
 
 .slide {
     width: 100%;
+    height: 100%;
     display: none;
     transition: transform 1s ease;
 }
 
 .slide img {
     width: 100%;
+    height: 100%;
     border-radius: 15px;
     height: 400px;
     object-fit: cover;
@@ -180,6 +216,34 @@ button:hover {
     padding: 10px 20px;
     border-radius: 30px;
     text-decoration: none;
+}
+.extracard{
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    flex-direction: wrap;
+    width: 100%;
+    margin: 20px;
+    transition: transform 0.3s;
+    border-color: #0d0b0b;
+
+}
+
+.extracardln{
+    
+    text-align: start;
+}
+.img{
+    height: 60%;
+    width: 50%;
+    margin-left: 150px;
+    margin-top:90px ;
+}
+.imgg{
+    width: 100%;
 }
 
 /* Footer */
