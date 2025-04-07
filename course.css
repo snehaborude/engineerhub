@@ -12,7 +12,6 @@ body {
     line-height: 1.6;
     transition: background-color 0.3s, color 0.3s;
 }
-
 /* Navbar */
 .navbar {
     background-color: #2a3d56;
@@ -109,147 +108,60 @@ body {
     background-color: #2a2a2a;
     border: 1px solid #444;
 }
-
-
-
-
-/* Image Gallery Slider Section */
-.gallery-slider {
-    text-align: center;
-    margin: 50px 0;
+/* Course Page */
+.course-content {
+    padding: 50px 20px;
+    background-color: #fff;
 }
 
-.gallery-slider h2 {
-    font-size: 36px;
-    color: #333;
+.course-content h2 {
+    font-size: 32px;
+    text-align: center;
     margin-bottom: 30px;
+    color: #333;
 }
 
-.slider-container {
-    position: relative;
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 15px;
-}
-
-.slide {
+#course-search {
     width: 100%;
-    height: 100%;
-    display: none;
-    transition: transform 1s ease;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-.slide img {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    height: 400px;
-    object-fit: cover;
-}
-
-button {
-    position: absolute;
-    top: 50%;
-    z-index: 100;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 15px;
-    cursor: pointer;
-    font-size: 20px;
-    border-radius: 50%;
-}
-
-button.prev {
-    left: 10px;
-}
-
-button.next {
-    right: 10px;
-}
-
-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Feature Cards Section */
-.features {
+.course-list {
     display: flex;
-    justify-content: space-between;
-    margin: 40px 0;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.feature-card {
-    background-color: white;
-    border-radius: 15px;
-    background-color: rgb(161, 212, 248);
+.course-card {
+    background-color: #f9f9f9;
     padding: 20px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 30%;
-    margin: 10px 0;
-    transition: transform 0.3s;
-    border-color: #0d0b0b;
-}
-
-.feature-card:hover {
-    transform: translateY(-10px);
-}
-
-.feature-card .card-icon img {
-    width: 80px;
-    margin-bottom: 20px;
-}
-
-.feature-card h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.feature-card p {
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-.feature-card .btn {
-    background-color: #022742;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 30px;
-    text-decoration: none;
-}
-.extracard{
-    display: flex;
-    background-color: white;
-    border-radius: 15px;
-
-    padding: 20px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    flex-direction: wrap;
-    width: 100%;
     margin: 20px;
-    transition: transform 0.3s;
-    border-color: #0d0b0b;
-
+    width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.extracardln{
-    
-    text-align: start;
-}
-.img{
-    height: 60%;
-    width: 50%;
-    margin-left: 150px;
-    margin-top:90px ;
-}
-.imgg{
-    width: 100%;
+.course-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
+.course-card p {
+    color: #666;
+}
+
+.course-card a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 16px;
+}
 /* Footer */
 footer {
     background-color: #2a3d56;

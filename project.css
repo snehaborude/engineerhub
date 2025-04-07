@@ -1,3 +1,17 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
 /* Basic Styles */
 body {
     height: 100%;
@@ -7,46 +21,102 @@ body {
     background-color: #f5f5f5;
 }
 
-/* Navbar Styles */
+/* Navbar */
 .navbar {
-    background-color: #00b4d8;
-    padding: 10px;
+    background-color: #2a3d56;
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .navbar .logo img {
-    width: 100px;
+    width: 50px;
+    
+}
+.wname{
+    font-size: 30px;
+    color:white;
+    margin-left: 10px;
+   
 }
 
 .navbar ul {
-    list-style: none;
     display: flex;
+    list-style: none;
+    gap: 10px;
     margin: 0;
+    padding: 0;
+    align-items: center;
 }
 
 .navbar ul li {
-    margin: 0 15px;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap:5px;
+    margin-left:auto;
+    padding: 0%;
 }
 
 .navbar ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s;
 }
 
-.navbar button {
-    background-color: #333;
-    color: #fff;
+.navbar ul li a:hover {
+    background-color: #4CAF50;
+}
+
+.navbar .theme-toggle {
+    background: none;
+    color: white;
+    font-size: 20px;
     border: none;
-    padding: 8px;
     cursor: pointer;
 }
-
-.navbar button:hover {
-    background-color: #444;
+/* Theme Toggle Icon Styling */
+.theme-toggle {
+    cursor: pointer;
+    margin-left: auto;
+    padding: 10px;
 }
 
+.theme-toggle img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Dark Mode Styling */
+.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.dark-mode .navbar,
+.dark-mode footer {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .feature-card {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+}
+
+.dark-mode a,
+.dark-mode .btn {
+    color: #ffd700;
+}
+.dark-mode .extracard{
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+}
 /* Search Section Styles */
 .search-section {
     padding: 30px;
@@ -62,7 +132,6 @@ body {
     border: 2px solid #ccc;
     font-size: 16px;
 }
-
 /* Suggestions Box Styling */
 .suggestions {
     display: none;
@@ -156,38 +225,18 @@ body {
     background-color: #e60000;
 }
 
-/* Footer Styles */
+
+
+
+/* Footer */
 footer {
-    background-color: #333;
+    background-color: #2a3d56;
     color: white;
     text-align: center;
-    padding: 10px;
-    margin-top: 30px;
-}
-
-/* Dark Mode */
-.dark-theme {
-    background-color: #1c1c1c;
-    color: white;
-}
-
-.dark-theme .navbar {
-    background-color: #333;
-}
-
-.dark-theme .projects-section {
-    background-color: #2c2c2c;
-}
-
-.dark-theme .project-card {
-    background-color: #333;
-    color: white;
-}
-
-.dark-theme .btn {
-    background-color: #00b4d8;
-}
-
-.dark-theme footer {
-    background-color: #222;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 16px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
 }
