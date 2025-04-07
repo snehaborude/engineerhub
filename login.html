@@ -20,20 +20,39 @@
             <li><a href="logout.html">Logout</a></li>
         </ul>
     </nav>
-
-    <!-- Login Form -->
-    <section class="login-form">
-        <h2>Login</h2>
-        <form id="login-form" onsubmit="return validateLogin()">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
-            
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-            
-            <button type="submit" class="btn">Login</button>
+<!--login form -->
+<BR>
+    <div class="form-wrapper">
+        <h1 class="form-wrapper__title">Login</h1>
+        <form action="#">
+            <div class="field email">
+                <div class="input-area">
+                    <input type="text" placeholder="Email Address">
+                </div>
+                <div class="error error-txt">Email can't be blank <i class="icon fas fa-envelope"></i> </div>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="error error-txt">Password can't be blank&nbsp;<i class="icon fas fa-lock"></i></div>
+            </div>
+            <div class="pass-txt"><a href="#">Forgot password?</a></div>
+            <input class="btn" type="submit" value="Login">
         </form>
-    </section>
+        <div class="form-wrapper__divider">Or Sign Up Using</div>
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://x.com/" class="twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="https://accounts.google.com/" class="google"><i class="fab fa-google"></i></a></li>
+        </ul>
+        <div class="form-wrapper__divider">Don't have a account</div>
+        <a href="#" class="form-wrapper__signInBtn">Sign Up</a>
+    </div>
+    <script src="login.js"></script>
+    <script src="https://kit.fontawesome.com/9b85b1e176.js" crossorigin="anonymous"></script>
+
+
 
     <footer>
         <p>&copy; 2025 A Engineer's Hub. All rights reserved.</p>

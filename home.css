@@ -57,9 +57,12 @@ body {
     color: white;
     text-decoration: none;
     font-size: 16px;
-    padding: 10px 20px;
+    padding: 9px 5px 2px;
     border-radius: 30px;
     transition: background-color 0.3s;
+
+    margin-right: 10px;
+    margin-left: 70px;
 }
 
 .navbar ul li a:hover {
