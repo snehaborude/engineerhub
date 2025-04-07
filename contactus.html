@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - A Engineer's Hub</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contactus.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
+     <!-- Navbar -->
+     <nav class="navbar">
         <div class="logo">
-            <img src="images/logo.png" alt="A Engineer's Hub Logo" />
+            <img src="images/logo.png" alt="Engineer’s Hub Logo">
         </div>
         <ul>
+            <p class="wname"><b>ENGINEERSHUB</b></p>
             <li><a href="home.html">Home</a></li>
             <li><a href="project.html">Projects</a></li>
             <li><a href="course.html">Courses</a></li>
             <li><a href="contactus.html">Contact Us</a></li>
             <li><a href="login.html">Login</a></li>
+            
         </ul>
+        <!-- Toggle Theme Icon -->
+        <div class="theme-toggle" onclick="toggleTheme()">
+            <img src="images/theme-icon.png" alt="Toggle Theme" id="theme-icon">
+        </div>
     </nav>
 
     <!-- Contact Form -->
@@ -38,10 +44,18 @@
         </form>
     </section>
 
-    <footer>
-        <p>&copy; 2025 A Engineer's Hub. All rights reserved.</p>
-    </footer>
+     <!-- Footer -->
+     <footer>
+        <p>
+       
+            Our team make sure that every user who uses our website should  have a good user experience,
+            and should find a good projects and courses.
+        </p>
+        <p><b>2025-ENGINEERSHUB</b> "Empowering engineers to create, innovate, and lead the future"
 
-    <script src="script.js"></script>
+        </p>
+</footer>
+
+    <script src="contactus.js"></script>
 </body>
 </html>

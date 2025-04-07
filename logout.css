@@ -1,0 +1,119 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+/* Navbar */
+.navbar {
+    background-color: #2a3d56;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo img {
+    width: 50px;
+    
+}
+.wname{
+    font-size: 30px;
+    color:white;
+    margin-left: 10px;
+   
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.navbar ul li {
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap:5px;
+    margin-left:auto;
+    padding: 0%;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #4CAF50;
+}
+
+.navbar .theme-toggle {
+    background: none;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+/* Theme Toggle Icon Styling */
+.theme-toggle {
+    cursor: pointer;
+    margin-left: auto;
+    padding: 10px;
+}
+
+.theme-toggle img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Dark Mode Styling */
+.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.dark-mode .navbar,
+.dark-mode footer {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .feature-card {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+}
+
+.dark-mode a,
+.dark-mode .btn {
+    color: #ffd700;
+}
+.dark-mode .extracard{
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+}
+/* Footer */
+footer {
+    background-color: #2a3d56;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 16px;
+}

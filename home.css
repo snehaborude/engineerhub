@@ -114,25 +114,7 @@ body {
 }
 
 
-/* Search Bar Section */
-.search-section {
-    text-align: center;
-    margin-top: 30px;
-}
 
-.search-bar {
-    width: 50%;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 30px;
-    border: 2px solid #ccc;
-}
-
-.suggestions {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #888;
-}
 
 /* Image Gallery Slider Section */
 .gallery-slider {
@@ -279,24 +261,4 @@ footer {
     padding: 20px;
     margin-top: 50px;
     font-size: 16px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .features {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .feature-card {
-        width: 80%;
-    }
-
-    .search-bar {
-        width: 80%;
-    }
-
-    .slider-container {
-width:100%;
-    }
 }
