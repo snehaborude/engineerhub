@@ -13,7 +13,7 @@
             <img src="images/logo.png" alt="Engineer’s Hub Logo">
         </div>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="project.html">Projects</a></li>
             <li><a href="course.html">Courses</a></li>
             <li><a href="contactus.html">Contact Us</a></li>
@@ -21,36 +21,332 @@
         </ul>
         <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
     </nav>
-
+<main>
     <!-- Search Bar -->
     <section class="search-section">
         <h2>Search Engineering Projects</h2>
         <input type="text" id="search-bar" placeholder="Search by project name..." oninput="searchProjects()">
         <div id="suggestions" class="suggestions"></div>
     </section>
-
+<!-- Project Details Section -->
+<section class="project-details" id="project-details" style="display: none;">
+    <h2>Project Details</h2>
+    <div id="project-info"></div>
+    <button class="close-btn" onclick="closeProjectDetails()">Close</button>
+</section>
     <!-- Project Cards Section -->
     <section class="projects-section" id="project-cards">
         <div class="project-card">
-            <h3>AI in Healthcare</h3>
+        <!--cloud computing-->
+            <h3>Bug Tracking System</h3>
             <p>Develop an AI model for diagnosing diseases in healthcare.</p>
-            <a href="#" class="btn" onclick="viewProjectDetails('AI in Healthcare')">View Details</a>
+            <a href="#" class="btn" onclick="viewProjectDetails('Bug Tracking System')">View Details</a>
         </div>
-
         <div class="project-card">
-            <h3>Smart Traffic System</h3>
-            <p>Implement a smart traffic management system using IoT and AI.</p>
-            <a href="#" class="btn" onclick="viewProjectDetails('Smart Traffic System')">View Details</a>
+      <h3>File Storage System using hybrid crptographic</h3>
+      <p>Implement an AI-based traffic management system using real-time camera data and IoT sensors.</p>
+      <a href="#" class="btn" onclick="viewProjectDetails('File Storage System using hybrid crptographic')">View Details</a>
+    </div><!-- Project Cards Section -->
+    
+        <div class="project-card">
+            <h3>Rural Banking System</h3>
+            <p>Develop an AI model for diagnosing diseases in healthcare.</p>
+            <a href="#" class="btn" onclick="viewProjectDetails('Rural Banking System')">View Details</a>
+        </div><!-- Project Cards Section -->
+        
+            <div class="project-card">
+                <h3>E-learning</h3>
+                <p>Develop an AI model for diagnosing diseases in healthcare.</p>
+                <a href="#" class="btn" onclick="viewProjectDetails('E-learning')">View Details</a>
+            </div>
+  
+    <div class="project-card">
+      <h3>online BookStore</h3>
+      <p>Build an NLP-powered chatbot that answers students’ frequently asked questions.</p>
+      <a href="#" class="btn" onclick="viewProjectDetails('online BookStore')">View Details</a>
+    </div>
+  <!-- Project Cards Section -->
+  
+    <div class="project-card">
+        <h3>Information Chatbot</h3>
+        <p>Develop an AI model for diagnosing diseases in healthcare.</p>
+        <a href="#" class="btn" onclick="viewProjectDetails('Information Chatbot')">View Details</a>
+    </div>
+    <div class="project-card">
+      <h3>Online Blood Bank System</h3>
+      <p>Create an ML tool that scans and scores resumes based on job descriptions and keywords.</p>
+      <a href="#" class="btn" onclick="viewProjectDetails('Online Blood Bank System')">View Details</a>
+    </div>
+  <!-- Project Cards Section -->
+
+    <div class="project-card">
+        <h3>personal Cloud Storage System</h3>
+        <p>Develop an AI model for diagnosing diseases in healthcare.</p>
+        <a href="#" class="btn" onclick="viewProjectDetails('personal Cloud Storage System')">View Details</a>
+    </div>
+    <div class="project-card">
+      <h3>Automation of University</h3>
+      <p>Use Natural Language Processing (NLP) to detect fake news articles from legitimate ones.</p>
+      <a href="#" class="btn" onclick="viewProjectDetails('Automation of University')">View Details</a>
+    </div>
+  <!-- DSA -->
+  
+    <div class="project-card">
+        <h3>Creating to do list</h3>
+        <p>Develop an AI model for diagnosing diseases in healthcare.</p>
+        <a href="#" class="btn" onclick="viewProjectDetails('Creating to do list')">View Details</a>
+    </div>
+    <div class="project-card">
+      <h3>Email spam filter</h3>
+      <p>Build an LSTM-based model to predict future stock prices using historical data.</p>
+      <a href="#" class="btn" onclick="viewProjectDetails('Email spam filter')">View Details</a>
+    </div>
+  <!-- Project Cards Section -->
+  
+    <div class="project-card">
+        <h3>Real-time traffic analysis</h3>
+        <p>Develop an AI model for diagnosing diseases in healthcare.</p>
+        <a href="#" class="btn" onclick="viewProjectDetails('Real-time traffic analysis')">View Details</a>
+    </div>
+    <div class="project-card">
+      <h3>Real-Estate property search</h3>
+      <p>Train a sentiment analysis model to detect user emotions in messages and reviews.</p>
+      <a href="#" class="btn" onclick="viewProjectDetails('Real-Estate property search')">View Details</a>
+    </div>
+  <!-- Project Cards Section -->
+
+    <div class="project-card">
+        <h3>Building a file zipper</h3>
+        <p>Develop an AI model for diagnosing diseases in healthcare.</p>
+        <a href="#" class="btn" onclick="viewProjectDetails('Building a file zipper')">View Details</a>
+    </div>
+    <div class="project-card">
+      <h3>Library Management System</h3>
+      <p>Use CNNs to identify plant diseases from leaf images and suggest possible cures.</p>
+      <a href="#" class="btn" onclick="viewProjectDetails('Library Management System')">View Details</a>
+    </div>
+  <!-- Project Cards Section -->
+  
+    <div class="project-card">
+        <h3>Cash flow minimizer</h3>
+        <p>Develop an AI model for diagnosing diseases in healthcare.</p>
+        <a href="#" class="btn" onclick="viewProjectDetails('AI in Healthcare')">View Details</a>
+    </div>
+    <div class="project-card">
+      <h3>Building</h3>
+      <p>Design a facial recognition-based attendance system using OpenCV and Python.</p>
+      <a href="#" class="btn" onclick="viewProjectDetails('Building')">View Details</a>
+    </div>
+  <!-- Project Cards Section -->
+  
+    <div class="project-card">
+        <h3>Travel planner using graph</h3>
+        <p>Develop an AI model for diagnosing diseases in healthcare.</p>
+        <a href="#" class="btn" onclick="viewProjectDetails('Travel planner using graph')">View Details</a>
+    </div>
+    <div class="project-card">
+      <h3>Banking Mangement System</h3>
+      <p>Develop a recommendation system for personalized course suggestions using collaborative filtering.</p>
+      <a href="#" class="btn" onclick="viewProjectDetails('Banking Mangement System')">View Details</a>
+    </div>
+    <!-- Roboticts -->
+    
+        <div class="project-card">
+            <h3>Development and Analysis of a Line
+                Following Robot Using Infrared Sensors</h3>
+            <p>Develop an AI model for diagnosing diseases in healthcare.</p>
+            <a href="#" class="btn" onclick="viewProjectDetails('Development and Analysis of a Line Following Robot Using Infrared Sensors')">View Details</a>
         </div>
-    </section>
 
-    <!-- Project Details Section -->
-    <section class="project-details" id="project-details" style="display: none;">
-        <h2>Project Details</h2>
-        <div id="project-info"></div>
-        <button class="close-btn" onclick="closeProjectDetails()">Close</button>
-    </section>
+  
+        <div class="project-card">
+            <h3>Obstacles  Avoidance Robot using Aurdino+Ultrasonic</h3>
+            <p>Implement a smart traffic management system using IoT and AI.</p>
+            <a href="#" class="btn" onclick="viewProjectDetails('Obstacles  Avoidance Robot using Aurdino+Ultrasonic')">View Details</a>
+        </div>
+        
+     <div class="project-card">
+        <h3>Gesture Control Robot using Accelerometer</h3>
+        <p>Voice Control Robots</p>
+        <a href="#" class="btn" onclick="viewProjectDetails('Gesture Control Robot using Accelerometer')">View Details</a>
+    </div>
 
+
+<div class="project-card">
+    <h3>Self balancing Robot</h3>
+    <p>Maze solving Robot using BFS algorithm.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('Maze solving Robot using BFS algorithm')">View Details</a>
+</div>
+
+   
+    
+    <div class="project-card">
+        <h3>Drone with Obstacles  Avoidance  using ROS</h3>
+        <p>Implement a smart traffic management system using IoT and AI.</p>
+        <a href="#" class="btn" onclick="viewProjectDetails('Drone with Obstacles  Avoidance  using ROS')">View Details</a>
+    </div>
+
+<div class="project-card">
+    <h3>Ai power face recognization</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('Ai power face recognization')">View Details</a>
+</div>
+
+<div class="project-card">
+    <h3>AI Robot Using GPT + Speech (Voice Chatbot Robot)</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('AI Robot Using GPT + Speech (Voice Chatbot Robot)')">View Details</a>
+</div>
+
+<div class="project-card">
+    <h3>Pick and place Robotic arms using Aurdino</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('Pick and place Robotic arms using Aurdino')">View Details</a>
+</div>
+<!--Ai ml-->
+<div class="project-card">
+    <h3>pbl</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('Implement a smart traffic management system using IoT and AI')">View Details</a>
+</div>
+
+<div class="project-card">
+    <h3>Autonomous Vehicle Navigation using Deep learning data science</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('Autonomous Vehicle Navigation using Deep learning data science')">View Details</a>
+</div>
+
+<div class="project-card">
+    <h3>
+        autonomous Vehicle Simulation Project</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('autonomous Vehicle Simulation Project')">View Details</a>
+</div>
+
+<div class="project-card">
+    <h3> Customer support chatbot project</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('Smart Traffic System')">View Details</a>
+</div>
+
+<div class="project-card">
+    <h3>autonomous Vehicle Simulation Project</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('Smart Traffic System')">View Details</a>
+</div>
+
+<div class="project-card">
+    <h3>E-commerce Website</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('E-commerce Website')">View Details</a>
+</div>
+
+<div class="project-card">
+    <h3>Job Board Website</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('Job Board Website')">View Details</a>
+</div>
+
+<div class="project-card">
+    <h3>Online Learning Platform </h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('Online Learning Platform')">View Details</a>
+</div>
+
+<div class="project-card">
+    <h3> Personal Portfolio Website</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails(' Personal Portfolio Website')">View Details</a>
+</div>
+
+<div class="project-card">
+    <h3>Real-Time Chat Application </h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('Real-Time Chat Application')">View Details</a>
+</div>
+<!--Web developement-->
+<div class="project-card">
+    <h3>Social Media Dashboard Website</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('Social Media Dashboard Website ')">View Details</a>
+</div>
+
+<div class="project-card">
+    <h3>Social Media Dashboard Website</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('Smart Traffic System')">View Details</a>
+</div>
+
+<div class="project-card">
+    <h3>Stock Price Prediction Project</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('Stock Price Prediction Project')">View Details</a>
+</div>
+
+<div class="project-card">
+    <h3>Task Management App </h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('Task Management App')">View Details</a>
+</div>
+<div class="project-card">
+    <h3> weather App</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('weather App')">View Details</a>
+</div>
+<div class="project-card">
+    <h3>Financial pridiction project</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('Financial pridiction project')">View Details</a>
+</div>
+<div class="project-card">
+    <h3>Forex Rate Prediction using Ensemble Learning</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('Forex Rate Prediction using Ensemble Learning')">View Details</a>
+</div>
+<div class="project-card">
+    <h3> Cryptocurrency Price Prediction using Deep Learning</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('Cryptocurrency Price Prediction using Deep Learning')">View Details</a>
+</div>
+<div class="project-card">
+    <h3>: House Price Prediction using ML Model</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('House Price Prediction using ML Model')">View Details</a>
+</div>
+<div class="project-card">
+    <h3>Gold Price Forecasting with Time Series Models</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('Gold Price Forecasting with Time Series Models')">View Details</a>
+</div>
+<div class="project-card">
+    <h3>Smart Traffic System</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('Smart Traffic System')">View Details</a>
+</div>
+<div class="project-card">
+    <h3>Smart Traffic System</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('Smart Traffic System')">View Details</a>
+</div> 
+<div class="project-card">
+    <h3>Smart Traffic System</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('Smart Traffic System')">View Details</a>
+</div>
+<div class="project-card">
+    <h3>Smart Traffic System</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('Smart Traffic System')">View Details</a>
+</div>
+<div class="project-card">
+    <h3>Smart Traffic System</h3>
+    <p>Implement a smart traffic management system using IoT and AI.</p>
+    <a href="#" class="btn" onclick="viewProjectDetails('Smart Traffic System')">View Details</a>
+</div>
+
+
+
+</main>
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Engineering Hub. All Rights Reserved.</p>
